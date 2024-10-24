@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void main()
+{
+    int a,sum=0;
+    printf("enter the number:");
+    scanf("%d",&a);
+    for(int i=1;i<=a;i++)
+    {
+        printf("\n hai     %d",i);
+        sum=i+sum;
+    }
+    printf("\ntotal:   %d",sum);
+}
+#output
+enter the number:5
+
+ hai     1
+ hai     2
+ hai     3
+ hai     4
+ hai     5
+total:   15
