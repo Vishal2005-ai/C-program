@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main()
+{
+  int a,sum=0;
+  while(1)
+  {
+      printf("enter number:");
+      scanf("%d",&a);
+      if(a<100)
+      sum=a+sum;
+      if(a==0)
+      break;
+  }
+  printf("sum of number given :%d",sum);
+}
+#output
+enter number:5
+enter number:2
+enter number:0
+sum of number given :7
