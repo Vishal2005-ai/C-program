@@ -1,0 +1,33 @@
+#include <stdio.h>
+int vis(int);
+int vis(int a)
+{
+    int tot;
+    while(a>0)
+    {
+        tot=tot+a%10;
+        a=a/10;
+    }
+    return tot;
+}
+
+
+
+void main()
+{
+    int a,sum=0;
+    while(1)
+    {
+       printf("entrer the number:");
+       scanf("%d",&a); 
+       if(a==0)
+       break;
+       else
+       sum=sum+vis(a);
+    }
+   printf("the sum is %d",sum);
+}
+#output
+entrer the number:17
+entrer the number:0
+the sum is 8
