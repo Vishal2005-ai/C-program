@@ -1,0 +1,18 @@
+#include <stdio.h>
+void main()
+{
+    int a,b;
+    printf("Enter the year:");
+    scanf("%d",&a);
+    printf("Enter the month in number:");
+    scanf("%d",&b);
+    if((a%100!=0)&&(a%4==0)&&(b==2))
+    printf("29 Days");
+    else if((b==1)||(b==3)||(b==5)||(b==7)||(b==8)||(b==10)||(b==12))
+    printf("31 Days");
+    else if((b==4)||(b==6)||(b==9)||(b==11))
+    printf("30 Days");
+    else
+    printf("28 Days");
+}
+    
